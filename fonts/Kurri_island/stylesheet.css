@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Kurri Island';
+    src: url('KurriIslandPERSONAL-Regular.woff2') format('woff2'),
+        url('KurriIslandPERSONAL-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

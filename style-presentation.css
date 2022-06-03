@@ -1,0 +1,401 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    overflow:hidden;
+}
+
+@font-face {
+    font-family: 'Avant_Garde';
+    src: url('https://www.helsnk.com/wp-content/themes/helsnk/fonts/Avant_garde/ITCAvantGardeStd-Md.woff2') format('woff2'),
+        url('https://www.helsnk.com/wp-content/themes/helsnk/fonts/Avant_garde/ITCAvantGardeStd-Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kurri_Island';
+    src: url('https://www.helsnk.com/wp-content/themes/helsnk/fonts/Kurri_island/KurriIslandPERSONAL-Regular.woff2') format('woff2'),
+        url('https://www.helsnk.com/wp-content/themes/helsnk/fonts/Kurri_island/KurriIslandPERSONAL-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.trois-colonnes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; align-items: center;
+    height: 100vh; width: auto;
+}
+
+/* Début de la première colonne */
+
+.premiere-colonne {
+    height: 100vh; width: 20%;
+    position: relative;
+}
+
+.Alexandre {
+    left: 10%;
+    top: 12%;
+}
+
+.Charly {
+    left: 10%;
+    top: 30%;
+}
+
+.Quentin {
+    left: 10%;
+    top: 48%;
+}
+
+.Thibaut {
+    left: 10%;
+    top: 66%;
+}
+
+.Wahib {
+    left: 10%;
+    top: 84%;
+}
+
+/* Début de la deuxieme colonne 23 41 59 77 */ 
+
+.deuxieme-colonne {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 100vh; width: 60%;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+}
+
+.profs img {
+    transform: translate(-50%,0%) rotate(180deg);
+    width: 10%;
+    height: auto;
+    position: absolute;
+}
+
+.Pascal {
+    top: -2%;
+    left: 20%;
+    z-index: 1;
+}
+
+.J-D {
+    top: -2%;
+    left:70%;
+    z-index: 1;
+}
+
+.Jonathan {
+    top: -2%; 
+    left: 80%;
+    z-index: 1;
+}
+
+.boite-titre {
+    display: flex;
+    align-items: center; justify-content: center;
+    width: 100%; height: 10%;
+    margin-bottom: 5%;
+}
+
+.titre {
+    width: 50%; height: 100%;
+    display: flex;
+    align-items: center; justify-content: center;
+    background-color: #176208;
+    font-family: 'Kurri_Island';
+    color: white ;
+    border: 5px ridge #854f31;
+    z-index: 1;
+}
+
+.boite-para {
+    height: 75%; width:100%;
+    display: flex;
+    align-items: center; justify-content: center;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.boite-para img {
+    height: 140%; width: 140%;
+    position: absolute;
+}
+
+.presentation {
+    height: 100%; width: 85%;
+    display: flex;
+    text-align: center;
+    align-items: center; justify-content: center;
+    font-family: 'Avant_Garde';
+    color: white;
+    position: absolute;
+}
+
+.boite-retour {
+    height: 5%; width: 100%;
+    display: flex;
+    align-items: center; justify-content:center;
+}
+
+.retour-presentation {
+    height: 100%; width: 30%;
+    display: flex;
+    align-items: center; justify-content: center;
+    text-align: center;
+    background-color: #686868;
+    font-family: 'Avant_Garde';
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    transition: background-color .2s, transform .2s;
+    z-index: 1;
+}
+
+.retour-presentation:hover {
+    background-color: #288425;
+    transform: scale(1.2);
+}
+
+/* Début de la troisieme colonne */
+
+.troisieme-colonne {
+    height: 100vh; width: 20%;
+    position: relative;
+}
+
+.Anne-Valerie {
+    right: -50%;
+    top: 12%;
+}
+
+.Clement {
+    right: -50%;
+    top: 30%;
+}
+
+.Maryam {
+    right: -50%;
+    top: 48%;
+}
+
+.Oumou {
+    right: -50%;
+    top: 66%;
+}
+
+.Christophe {
+    right: -50%;
+    top: 84%;
+}
+
+.premiere-colonne img, .troisieme-colonne img {
+    width: 60%;
+    height: auto;
+    position: absolute;
+}
+
+.premiere-colonne img {
+    transform: translate(-50%,-50%) rotate(55deg);
+}
+
+.troisieme-colonne img {
+    transform: translate(-50%,-50%) rotate(-55deg);
+}
+
+/* Première responsivité */
+
+@media (max-width: 1100px) {
+
+    .body {
+        overflow: hidden;
+    }
+
+    .premiere-colonne {
+        z-index: 1;
+    }
+
+    .premiere-colonne img {
+        width: 142%;
+    }
+
+    .Alexandre, .Charly, .Quentin, .Thibaut, .Wahib {
+        left: 20%;
+    }
+
+    .deuxieme-colonne {
+        width: 100%; height: 100%;
+        position: relative;
+    }
+
+    .profs {
+        height: 100vh;
+        position: absolute;
+    }
+
+    .profs img:not([class="J-D"]) {
+        transform: translate(-50%,0%) rotate(0deg);
+        width: 20%;
+        height: auto;
+        position: absolute;
+    }
+
+    .Pascal {
+        bottom: 0%;
+    }
+
+    .profs .J-D {
+        transform: translate(-50%,0%) rotate(180deg);
+        width: 20%;
+        height: auto;
+    }
+
+    .titre {
+        text-align: center;
+        margin-top: 20%;
+        z-index: 1;
+        background-color: transparent;
+        border: none;
+    }
+
+    .boite-para img {
+        width: 142%; height: 142%;
+    }
+
+    .retour-presentation {
+        text-align: center;
+        margin-bottom: 25%;
+        z-index: 1;
+        padding: 2%;
+    }
+
+    .retour-presentation:hover {
+        background-color: #686868;
+        transform: scale(1);
+    }
+
+    .troisieme-colonne img {
+        width: 142%;
+    }
+
+    .Anne-Valerie, .Clement, .Maryam, .Oumou, .Christophe {
+        right: -110%;
+    }
+}
+
+/* Deuxième responsivité */
+
+@media (max-width: 600px) {
+    
+    .trois-colonnes {
+        display: flex; flex-direction: column;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .premiere-colonne {
+        width: 100%;
+        height: 100%;
+    }
+
+    .premiere-colonne img {
+        transform: translate(-50%,0%) rotate(180deg);
+        width: auto;
+        height: 100%;
+        position: absolute;
+    }
+
+    .Alexandre {
+        top: -8%;
+        left: 15%;
+    }
+
+    .Charly {
+        top: -8%;
+        left: 33%;
+    }
+
+    .Quentin {
+        top: -8%;
+        left: 50%;
+    }
+
+    .Thibaut {
+        top: -8%;
+        left: 67%;
+    }
+
+    .Wahib {
+        top: -8%;
+        left: 85%;
+    }
+
+    .deuxieme-colonne h2 {
+        margin: 0;
+    }
+
+    .deuxieme-colonne a {
+        margin: 0;
+    }
+
+    .deuxieme-colonne img {
+        display: none;
+    }
+
+    .boite-titre {
+        margin: 20px;
+    }
+
+    .retour-presentation {
+        padding: 5%;
+    }
+
+    .troisieme-colonne {
+        width: 100%;
+        height: 100%;
+    }
+
+    .troisieme-colonne img {
+        z-index: 1;
+        transform: translate(-50%,-50%) rotate(0deg);
+        width: auto;
+        height: 100%;
+        position: absolute;
+    }
+
+    .Anne-Valerie {
+        top: 54%;
+        left: 15%;
+    }
+
+    .Clement {
+        top: 54%;
+        left: 33%;
+    }
+
+    .Maryam {
+        top: 54%;
+        left: 50%;
+    }
+
+    .Oumou {
+        top: 54%;
+        left: 67%;
+    }
+
+    .Christophe {
+        top: 54%;
+        left: 85%;
+    }
+}

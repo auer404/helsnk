@@ -1,0 +1,305 @@
+/* reset option par defaut */
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.home{
+    width: 100%;
+    height: 100vh;
+    background-color: lightslategray;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+/* image de fond */
+
+.img-container{
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.background{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;   
+}
+
+
+/* images de visage */
+
+.photo-container{
+    position: relative;
+
+   
+}
+
+.visage{
+    width: 9%;
+    height: auto;
+    cursor: pointer;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+}
+
+.visage:hover{
+    transform: rotate(-5deg) translate(-50%, -50%);
+}
+
+.alexandre{
+    top: 64.5%;
+    right: 4.6%;
+}
+
+.anne-valerie{
+    top: 66.4%;
+    right: 27%;
+}
+
+.charly{
+    top: 65%;
+    left: 42%;
+}
+
+.christophe{
+    top: 90.3%;
+    left: 5%;
+}
+
+.clement{
+    top: 52.3%;
+    left: 14%;
+}
+
+.jd{
+    top: 14%;
+    left: 9%;
+}
+
+.jonathan{
+    top: 12.3%;
+    right: -4%;
+}
+
+.maryam{
+    top: 64.9%;
+    left: 18.7%;
+}
+
+.oumou{
+    top: 90.4%;
+    left: 12%;
+}
+
+.pascal{
+    top: 12.3%;
+    right: 4%;
+}
+
+.quentin{
+    top: 52%;
+    right: 12.9%;
+}
+
+.thibaut{
+    top: 52.7%;
+    left: 36%;
+}
+
+.wahib{
+    top: 52.8%;
+    right: 33.8%;
+}
+
+.lien-article{
+    position: absolute;
+    top: 15%;
+    right: 28.3%;
+    width: 160px;
+    height: 60px;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 4px solid rgb(255, 255, 255);
+    box-shadow: 0 4px 4px rgb(22, 22, 22);
+    transition: all 0.5s ease;
+}
+
+.lien-article:hover{
+    border: 4px solid rgb(201, 201, 201);
+    transform: translateY(-3px) scale(1.03);
+    background-color: whitesmoke;
+    box-shadow: 0 6px 5px hsla(0, 0% , 0%, 0.2),
+                0 12px 10px hsla(0, 0%, 0%, 0.4);
+}
+
+.lien-article a{
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+}
+
+
+#display-article{
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(245, 245, 245, 0.61);
+    position: absolute;
+    z-index: 99;
+}
+
+.zone-article{
+    position:absolute;
+    height: 30.75%;
+    width: 49.8%;
+    top: 12.3%;
+    left: 23.8%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+
+  .zone-article::-webkit-scrollbar {
+    width: 0.7em;
+  }
+  .zone-article::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  .zone-article::-webkit-scrollbar-thumb {
+    background: burlywood;
+  }
+
+
+.bloc-contenu{
+    display: flex;
+    flex-direction: column;
+    color:white;
+    width: 70%;
+}
+
+.bloc-article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+
+}
+
+.bloc-liens{
+    width: 10%;
+}
+
+a{
+    color: white;
+}
+
+
+
+header{
+background-color: #134E5E;
+color:white;
+}
+
+footer{
+    background-color: #134E5E;
+    color:white;
+    height: 100%;
+}
+
+.cigarette{
+    top: 62.2%;
+    right: 26%;
+    position: absolute;
+    width: 2.5%;
+    height: 6%;
+}
+
+.thermos{
+    top: 60%;
+    left: 7%;
+    position: absolute;
+    width: 4.4%;
+    height: 8%;
+}
+
+.sac{
+    top: 73%;
+    left: 23%;
+    position: absolute;
+    width: 4%;
+    height: 8%;
+}
+
+
+
+.bitcoin{
+    top: 60%;
+    left: 28%;
+    position: absolute;
+    width: 4.4%;
+    height: 8%;
+}
+
+.portugal{
+    top: 70%;
+    right: 2.5%;
+    position: absolute;
+    width: 8%;
+    height: 10%;
+}
+
+.dofus{
+    top: 74%;
+    left: 47%;
+    position: absolute;
+    width: 4%;
+    height: 7%;
+}
+
+.electro{
+    top: 75%;
+    right: 30%;
+    position: absolute;
+    width: 1.2%;
+    height: 6%;
+}
+
+.fibre{
+    top: 27%;
+    left: 1.3%;
+    position: absolute;
+    transform: rotate(-5deg);
+    width: 6.5%;
+    height: 2.6%;
+}
+
+.fibre2{
+    top: 29%;
+    left: 1.1%;
+    position: absolute;
+    width: 6.5%;
+    height: 2.6%;
+    transform: rotate(-5deg);
+}
+
+.burger{
+    top: 60%;
+    right: 46%;
+    position: absolute;
+    width: 4.2%;
+    height: 6%;
+}
+
+.chips{
+    top: 60%;
+    right: 47%;
+    position: absolute;
+    width: 4.4%;
+    height: 8%;
+}

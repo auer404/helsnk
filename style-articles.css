@@ -1,0 +1,341 @@
+/* style */
+
+
+/* variables */
+
+/* couleurs */
+
+:root{
+    --almost-black-grayish-blue:          hsl(219, 19%, 14%);
+    --very-dark-grayish-blue:             hsl(217, 19%, 35%);
+    --desaturated-dark-blue:              hsl(214, 17%, 51%);
+    --desaturated-dark-blue-transparent:  hsl(214, 17%, 51%, 0.7);
+    --light-grayish-blue:                 hsl(210, 46%, 95%);
+    --grayish-blue:                       hsl(212, 23%, 69%);
+    --white:                              hsl(0, 0%, 100%);
+
+
+/* typo */
+
+--fs-13: 13px;
+
+}
+
+
+/* reset & default */
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    /* color: var(--white); */
+}
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+img, ion-icon {
+    display: block;
+}
+
+html{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--light-grayish-blue);
+}
+
+/* main style */
+
+/* header */
+
+header{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--very-dark-grayish-blue);
+}
+
+header button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: var(--light-grayish-blue);
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+header button a{
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+}
+
+header button:hover{
+    background: var(--white);
+    box-shadow: 6px 6px 5px hsla(0, 0% , 0%, 0.06),
+                12px 12px 10px hsla(0, 0%, 0%, 0.1);
+}
+
+header h1{
+    color: var(--white);
+}
+
+.logo{
+    width: 250px;
+    height: auto;
+}
+
+/* article card */
+
+.article-card{
+    display: grid;
+    grid-template-columns: 285px minmax(300px, 445px);
+    max-width: 730px;
+    border-radius: 10px;
+    margin: 30px 0 30px 0;
+    box-shadow: 6px 6px 5px hsla(0, 0% , 0%, 0.02),
+                25px 25px 20px hsla(0, 0%, 0%, 0.03),
+                100px 100px 80px hsla(0, 0%, 0%, 0.05);
+}
+
+
+.img-box{
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+}
+
+.article-banner{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    transition: all 0.5s ease;
+}
+
+.article-card:hover .article-banner {
+    transform: scale(1.1);
+}
+
+.article-content{
+    background: var(--white);
+    padding: 32px 40px;
+    border-radius: 0 10px 10px 0;
+}
+
+.article-title{
+    font-size: 20px;
+    color: var(--very-dark-grayish-blue);
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.article-text{
+    font-size: var(--fs-13);
+    color: var(--desaturated-dark-blue);
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.article-content-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+}
+
+.author-avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.author-name{
+    color: var(--very-dark-grayish-blue);
+    font-size: var(--fs-13);
+}
+
+.publish-date{
+    color: var(--grayish-blue);
+    font-size: var(--fs-13);
+}
+
+.share{
+    position: relative;
+}
+
+.share-button{
+    background: var(--light-grayish-blue);
+    padding: 6px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: var(--desaturated-dark-blue);
+    transition: all 0.25s ease;
+}
+
+.share-button:hover, .share-button.active{
+    color: var(--light-grayish-blue);
+    background: var(--desaturated-dark-blue);
+}
+
+.share-option{
+    /* variable pour transformer "share-option" sans répéter les valeurs de transformations */
+    --scale: 1;
+    --translateX: -50%;
+    --translateY: 0;
+
+    background: var(--very-dark-grayish-blue);
+    position: absolute;
+    bottom: calc(100% + 28px);
+    left: 50%;
+    transform: translate(var(--translateX), var(--translateY)) scale(var(--scale));
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 17px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px -5px #0003;
+    transform-origin: bottom;
+    visibility: hidden;
+    transition: all 0.25s ease;
+}
+
+.share-option.active{
+    --scale: 1;
+    visibility: visible;
+}
+
+.share-option::after{
+    content: '';
+    background: var(--very-dark-grayish-blue);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -60%) rotate(45deg);
+}
+
+.share-option span{
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--grayish-blue);
+    margin-right: 5px;
+}
+
+.share-option ion-icon{
+    font-size: 22px;
+}
+
+.share-option ion-icon:hover, .article-title:hover, .author-name:hover{
+    filter: invert(1);
+}
+
+/* options et paramétrage d'overlay */
+
+.noscroll{
+    overflow: hidden;
+}
+
+#overlay{
+    position: fixed; 
+    display: flex; 
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--desaturated-dark-blue-transparent); 
+    z-index: 2; 
+}
+
+.close-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    color: var(--almost-black-grayish-blue);
+    font-size: 50px;
+}
+
+.content-container{
+    width: 80%;
+}
+
+/* aside avec les liens vers les autres articles */
+
+.aside-article{
+    width: 20%;
+    background-color: var(--grayish-blue);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.lien-article-overlay{
+    width: 80%;
+    height: 80px;
+    background-color: whitesmoke;
+    margin: 20px auto;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.overlay-article-container{
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 5vh;
+    margin: 0 auto;
+    background: var(--light-grayish-blue);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.overlay-article-container h3{
+    padding: 30px 0 20px 100px;
+}
+
+.overlay-article-container p{
+    padding: 15px 100px;
+    text-align: justify;
+}
+
+.article-flex{
+    display: flex;
+}
+
+.article-flex p{
+    padding: 15px 40px 15px 100px;
+}
+
+.article-flex img{
+    width: 50%;
+    height: auto;
+    padding: 15px 100px 15px 0;
+}

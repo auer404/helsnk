@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Avant_Garde';
+    src: url('https://www.helsnk.com/wp-content/themes/helsnk/fonts/Avant_garde/ITCAvantGardeStd-Md.woff2') format('woff2'),
+        url('https://www.helsnk.com/wp-content/themes/helsnk/fonts/Avant_garde/ITCAvantGardeStd-Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kurri_Island';
+    src: url('https://www.helsnk.com/wp-content/themes/helsnk/fonts/Kurri_island/KurriIslandPERSONAL-Regular.woff2') format('woff2'),
+        url('https://www.helsnk.com/wp-content/themes/helsnk/fonts/Kurri_island/KurriIslandPERSONAL-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body{
+    background-color: rgb(212, 212, 212);
+}
+
+.description_bloc h1{
+    font-family: "Kurri_Island" ;
+    color: white;
+}
+
+.bloc_perso p{
+    font-family: 'Avant_Garde';
+    color: white;
+}
+
+.bouton_profil_perso{
+    display: flex;
+    justify-content:space-between;
+    padding: 2em;
+}
+
+.boutton-retour{
+
+	border-radius:28px;
+    
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+
+	text-decoration:none;
+
+    font-size: 60px;
+}
+
+#profil_bloc{
+    width: 80%;
+    margin: auto;
+}
+
+.bloc_caricature img{
+    width: 100%;
+    transform: translateY(5px);
+}
+
+.bloc_caricature{
+    width: 200px;
+    min-height: 250px;
+    background-color: rgb(81, 119, 71);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.en_tete_profil{
+    display: flex;
+    width: auto;
+}
+
+.description_bloc{
+    min-height: 250px;
+    width: 100%;
+    padding: 1em;
+    background-color: #113F24;
+}
+.bloc_perso{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.bloc_perso p{
+    margin: 10px 0;
+}
+.height{
+    height: 200px;
+}
+
+.description_bloc div{
+    padding: 10px;
+    display: flex;
+}
+.partie_perso{
+    height: 1500px;
+    background-color: white;
+}
+
+
+
+
+.link-perso{
+    color: white;
+}

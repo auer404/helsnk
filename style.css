@@ -1,0 +1,35 @@
+/*
+Theme Name: Helsnk Theme Wordpress
+Theme URI: https://helsnk.com
+Author: Edition 2022
+Author URI: https://beltrame.me
+Description: Le thême wordpress officiel de la classe helsinki.
+Requires at least: WordPress 5.0
+Version: 1.0
+*/
+
+@font-face {
+    font-family: 'Avant_Garde';
+    src: url('https://www.helsnk.com/wp-content/themes/helsnk/fonts/Avant_garde/ITCAvantGardeStd-Md.woff2') format('woff2'),
+        url('https://www.helsnk.com/wp-content/themes/helsnk/fonts/Avant_garde/ITCAvantGardeStd-Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kurri_Island';
+    src: url('https://www.helsnk.com/wp-content/themes/helsnk/fonts/Kurri_island/KurriIslandPERSONAL-Regular.woff2') format('woff2'),
+        url('https://www.helsnk.com/wp-content/themes/helsnk/fonts/Kurri_island/KurriIslandPERSONAL-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+
+
+
