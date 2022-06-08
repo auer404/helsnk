@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style-accueil.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style-template.css">
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style-articles.css">
+
 
         
 
@@ -65,6 +65,13 @@
     } // endif
 ?>
             </div>
+            <img src="<?php echo get_template_directory_uri(); ?>/img-accueil/casque.png" alt="" class="casque"></a>
+            <img src="<?php echo get_template_directory_uri(); ?>/img-accueil/carnivor2.png" alt="" class="carnivor3"></a>
+            <img src="<?php echo get_template_directory_uri(); ?>/img-accueil/carnivor2.png" alt="" class="carnivor2"></a>
+
+            <img src="<?php echo get_template_directory_uri(); ?>/img-accueil/carnivor.png" alt="" class="carnivor"></a>
+            <img src="<?php echo get_template_directory_uri(); ?>/img-accueil/apple.gif" alt="" class="apple"></a>
+            <img src="<?php echo get_template_directory_uri(); ?>/img-accueil/verre.webp" alt="" class="verre"></a>
             <img src="<?php echo get_template_directory_uri(); ?>/img-accueil/fibre.png" alt="" class="fibre"></a>
             <img src="<?php echo get_template_directory_uri(); ?>/img-accueil/fibre2.png" alt="" class="fibre2"></a>
             <img src="<?php echo get_template_directory_uri(); ?>/img-accueil/electro.png" alt="" class="electro"></a>
