@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style-accueil.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style-template.css">
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style-articles.css">
+
 
         
 
@@ -65,6 +65,13 @@
     } // endif
 ?>
             </div>
+            <img src="<?php echo get_template_directory_uri(); ?>/img-accueil/casque.png" alt="" class="casque"></a>
+            <img src="<?php echo get_template_directory_uri(); ?>/img-accueil/carnivor2.png" alt="" class="carnivor3"></a>
+            <img src="<?php echo get_template_directory_uri(); ?>/img-accueil/carnivor2.png" alt="" class="carnivor2"></a>
+
+            <img src="<?php echo get_template_directory_uri(); ?>/img-accueil/carnivor.png" alt="" class="carnivor"></a>
+            <img src="<?php echo get_template_directory_uri(); ?>/img-accueil/apple.gif" alt="" class="apple"></a>
+            <img src="<?php echo get_template_directory_uri(); ?>/img-accueil/verre.webp" alt="" class="verre"></a>
             <img src="<?php echo get_template_directory_uri(); ?>/img-accueil/fibre.png" alt="" class="fibre"></a>
             <img src="<?php echo get_template_directory_uri(); ?>/img-accueil/fibre2.png" alt="" class="fibre2"></a>
             <img src="<?php echo get_template_directory_uri(); ?>/img-accueil/electro.png" alt="" class="electro"></a>
@@ -80,12 +87,12 @@
             <a href="https://helsnk.com/alexandre/"><img src="<?php echo get_template_directory_uri(); ?>/img-accueil/Alexandre.png" alt="" class="alexandre visage in-overlay"></a>
             <a href="https://helsnk.com/anne-valerie"><img src="<?php echo get_template_directory_uri(); ?>/img-accueil/Anne-Valerie.png" alt="" class="anne-valerie visage in-overlay"></a>
             <a href="https://helsnk.com/charly/"><img src="<?php echo get_template_directory_uri(); ?>/img-accueil/Charly.png" alt="" class="charly visage in-overlay"></a>
-            <a href="https://helsnk.com/christophe/"><img src="<?php echo get_template_directory_uri(); ?>/img-accueil/Christophe.png" alt="" class="christophe visage in-overlay"></a>
+            <!-- <a href="https://helsnk.com/christophe/"><img src="<?php echo get_template_directory_uri(); ?>/img-accueil/Christophe.png" alt="" class="christophe visage in-overlay"></a> -->
             <a href="https://helsnk.com/clement/"><img src="<?php echo get_template_directory_uri(); ?>/img-accueil/Clement.png" alt="" class="clement visage in-overlay"></a>
             <a href="https://helsnk.com/jd/"><img src="<?php echo get_template_directory_uri(); ?>/img-accueil/J-D.png" alt="" class="jd visage in-overlay"></a>
             <a href="https://helsnk.com/jonathan/"><img src="<?php echo get_template_directory_uri(); ?>/img-accueil/Jonathan.png" alt="" class="jonathan visage in-overlay"></a>
             <a href="https://helsnk.com/maryam/"><img src="<?php echo get_template_directory_uri(); ?>/img-accueil/Maryam.png" alt="" class="maryam visage in-overlay"></a>
-            <a href="https://helsnk.com/oumou/"><img src="<?php echo get_template_directory_uri(); ?>/img-accueil/Oumou.png" alt="" class="oumou visage in-overlay"></a>
+            <!--  <a href="https://helsnk.com/oumou/"><img src="<?php echo get_template_directory_uri(); ?>/img-accueil/Oumou.png" alt="" class="oumou visage in-overlay"></a> -->
             <a href="https://helsnk.com/pascal/"><img src="<?php echo get_template_directory_uri(); ?>/img-accueil/Pascal.png" alt="" class="pascal visage in-overlay"></a>
             <a href="https://helsnk.com/quentin/"><img src="<?php echo get_template_directory_uri(); ?>/img-accueil/Quentin.png" alt="" class="quentin visage in-overlay"></a>
             <a href="https://helsnk.com/thibaut/"><img src="<?php echo get_template_directory_uri(); ?>/img-accueil/Thibaut.png" alt="" class="thibaut visage in-overlay"></a>
